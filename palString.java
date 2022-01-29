@@ -3,15 +3,15 @@ public class palString
 {
     public static void main()
     {
-        String s1="", s2="";
+        String input="", pal="";
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a word");
-        s1=sc.next();
-        for(int i=s1.length()-1;i>=0;i--)
+        input=sc.next();
+        for(int i=input.length()-1;i>=0;i--)
         {
-            s2+=s1.charAt(i);
+            pal+=input.charAt(i);
         }
-        if(s1.equals(s2))
+        if(input.equals(pal))
             System.out.println("It is a palindrome");
         else
             System.out.println("It is not a palindrome");
