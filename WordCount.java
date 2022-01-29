@@ -5,11 +5,11 @@ public class WordCount
     {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the sentence");
-        String s=sc.nextLine();
+        String input=sc.nextLine();
         int words=1;
-        for(int i=0;i<s.length();i++)
+        for(int i=0;i<input.length();i++)
         {
-            if(s.charAt(i) == ' ')
+            if(input.charAt(i) == ' ')
             {
                 words++;
             }
